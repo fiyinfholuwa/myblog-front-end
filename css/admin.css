@@ -1,0 +1,119 @@
+header {
+    background: #014748;
+    height: 68px;
+}
+
+.admin-wrapper {
+    display: flex;
+    height:600px;   
+}
+
+ .admin-wrapper .left-sidebar {
+    flex: 2;
+    height: 100%;
+    background: #234a57;
+}
+
+.admin-wrapper .left-sidebar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: aliceblue;
+}
+.admin-wrapper .left-sidebar ul li a {
+    padding: 15px;
+    display: block;
+    border-bottom:1px solid #004044;
+}
+
+.admin-wrapper .left-sidebar ul li a:hover {
+    background-color: #004044;
+}
+ .admin-wrapper .admin-content {
+    flex: 8;
+    height: 100%;
+    padding: 40px 100px 100px;
+    overflow-y: scroll;
+}
+
+.admin-content .page-title {
+    text-align: center;
+    margin-bottom: 16px;      16px==1rem
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+}
+
+th , td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.edit {
+    color: green;
+}
+.delete {
+    color: red;
+}
+.publish {
+    color: blue;
+}
+.edit:hover,
+.delete:hover,
+.publish:hover {
+    text-decoration: underline;
+}
+
+form div {
+    margin: 15px;
+}
+
+
+@media only screen and (max-width:750px) {
+    .admin-wrapper {
+        display: block;
+        height: 400px;   
+    }
+    
+    .admin-wrapper .left-sidebar {
+        width: 100%;
+        height: 150px;
+        background: #234a57;
+    }
+    .admin-wrapper .admin-content {
+        width: 100%;
+        display: block;
+        padding: 2px;
+        overflow-y: scroll;
+    }
+    .admin-content .page-title {
+        text-align: center;
+        margin-bottom: 16px;      16px==1rem
+    }
+    table {
+        width: 90%;
+        font-size: 14px;
+        text-align: center;
+        padding-left: 3px;
+    }
+    th , td {
+        padding: 2px;
+        text-align: center;
+        border-bottom: 1px solid #D3D3D3;
+    }
+    .btn-big {
+        font-size: 12px;
+    }
+    .button-group {
+        margin-top: 20px;
+        padding-left: 20px;
+        text-align: center;
+    }
+    .page-title {
+        font-size: 12px;
+    }
+}   
